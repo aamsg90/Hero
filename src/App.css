@@ -1,0 +1,524 @@
+/* Root Variables */
+:root {
+    --font-offside: 'Offside', sans-serif;
+    --font-ptSans: 'Pt-sans', sans-serif;
+    --background: #04203f;
+    --primary: #96c0ee;
+    --danger: #CD0200;
+    --success: #3CB521;
+    --hover: #D47500;
+    --cardHover: rgba(83, 138, 206, 0.5);
+    --table-bg: #C9DEF5;
+    --table-bg-alt: #AECBEB;
+    --input-bg: #E4EEfA;
+}
+
+/* Core Styling */
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    color: var(--primary);
+    font-size: 1em;
+    font-family: var(--font-ptSans);
+    background: var(--background);
+}
+h1 {
+    font-size: 2em;
+    text-shadow: 1px 1px 3px;
+}
+h1,
+h2 {
+    font-weight: 500;
+    text-shadow: 1px 1px 3px;
+}
+h2 {
+    margin: 1.25rem 0; 
+    font-size: 1.625em; 
+    color: var(--primary);
+}
+hr {
+    border: 3px double var(--success); 
+    opacity: 50%; 
+}
+.primary {
+    color: var(--primary);
+}
+.row-content,
+.card-row {
+    padding: 1.25rem 0;
+    min-height: 6.25rem; 
+}
+img,
+.vol-card-body {
+    border: 3px double var(--primary); 
+}
+/* End Core Styling */
+
+/* Navigation */
+.mynav {
+    background: linear-gradient(to left, #5184bb, #0d3461);
+}
+a, a:hover {
+    color: inherit;
+    text-decoration: none; 
+}
+.nav-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+}
+.nav-logo-sm {
+    width: .9375rem;
+    height: .9375rem;
+    background: none;
+    border: none;
+}
+.nav-text {
+    font-size: .875em;
+    font-weight: 500;
+}
+.nav-link,
+.ft-heading {
+    font-size: 1.125em;
+}
+.host-header {
+    line-height: 1.3;
+    border-left: 1.5px solid var(--background);
+}
+.nav-active {
+    color: var(--success);
+}
+.nav-link:hover,
+.nav-link:focus,
+.ft-link:hover,
+.ft-link:focus {
+    color: var(--hover); 
+}
+.nv-icon {
+    font-size: 2rem;
+} 
+/* End Navigation */
+
+/* Breadcrumb */
+.breadcrumb {
+    background: transparent;
+    padding-top: 4px;
+}
+.bc-prev {
+    font-weight: 600;
+}
+.breadcrumb .breadcrumb-item::before {
+    opacity: 65%; 
+    color: var(--hover);
+}
+/* End Breadcrumb */
+
+/* Landing Page */
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3.125rem auto;
+}
+.hero {
+    background-image: 
+        linear-gradient(rgba(4, 13, 20, 0.9), 
+            rgba(4, 13, 20, 0.9)), 
+            url(images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: auto;
+
+    justify-content: center;
+    align-content: center;
+}
+.sub-text {
+    font-size: 3.1em; 
+    text-shadow: 1px 1px 3px;
+}
+.lp-logo {
+    width: 2.375rem;
+    height: 2.375rem;
+    border: none;
+}
+.findOut {
+    text-decoration: none;
+}
+/* End Landing Page */
+
+/* About Table*/
+.about-table-holder {
+    height: auto;
+    background: transparent; 
+    border-radius: 6px;
+    box-shadow:  6px 6px 8px #031931,
+        -6px -6px 8px #05274d;
+    
+}
+.about-table-header{
+    font-size: 1.375em;
+    font-weight: 500;
+}
+.about-card-body {
+    padding: 15px;
+} 
+.about-card-odd {
+    background: var(--table-bg); 
+}
+.about-card-even {
+    background: var(--table-bg-alt);
+}
+.table-icon {
+    width: 2.083125rem;
+    height: 2.083125rem;
+    border: none;
+} 
+.last-dt {
+    border-radius: 0 0 3px 3px;
+}
+/* End About Table */
+
+/* Accordions */
+.accordion-card {
+    box-shadow:  6px 6px 8px #031931,
+        -6px -6px 8px #05274d;
+}
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+.hero-title {
+    border-radius: 3px;
+    font-size: clamp(1.15em, 2vw, 1.275em);
+}
+.accordion-icon {
+    transition: 0.2s ease-in-out;
+    transform-origin: center;
+}
+.faq-accordion-title {
+    border: 2px double var(--primary);
+    font-size: clamp(1.25em, 2vw, 1.5em);
+}
+.accordion-title:hover {
+    opacity: 70%;
+}
+.faq-accordion-title:hover {
+    background-color: var(--cardHover);
+}
+.description {
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: 0 0 3px 3px;
+    background: #c9def5;
+    border: 2px double var(--primary);
+    overflow: hidden;
+}
+
+.faq-accordion-description {
+    border: 2px double var(--primary);
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    background-color: none;
+}
+/* End Accordions */
+
+/* FAQs Buttons*/
+.faqBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.faqBtn:hover {
+    background: none;
+    color: var(--hover);
+}
+.faqBtn:active,
+.faqBtn:focus {
+    background: none;
+    color: var(--success);
+}
+.faqTitle {
+    color: var(--success);
+}
+/* End FAQs Buttons */
+
+/* Contact & Volunteer Forms*/
+.form {
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow:  6px 6px 8px #020f1d,
+        -3px -3px 8px #063161;
+}
+.form-input {
+    border: 3px double var(--primary);
+    height: 2.5rem;
+    color: #446E9B;
+    background: var(--input-bg); 
+}
+.options {
+    color: #446E9B;
+}
+.errors {
+    color: var(--danger);
+    font-size: .875em;
+}
+.form-control::-webkit-input-placeholder {
+    color: #446E9B; 
+    font-size: 1.1em;
+}
+.custom-control-label::before {
+    background: var(--input-bg); ;
+    border: 1px double #446E9B !important; 
+}
+.label-agree::before,
+.label-interests::before {
+    -webkit-border-radius: 0px ;
+    -moz-border-radius: 0px ;
+    border-radius: 0px !important; 
+    border: 1px double var(--primary) !important;
+}
+.form-input> option {
+    background: var(--input-bg);
+}
+.label-interests {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-feedback,
+.btn-vol-app {
+    height: 3.125rem;
+    border-radius: 1.875rem;
+}
+/* End Contact & Volunteer Forms*/
+
+/* Modals */
+.modalCustom {
+    border-radius: 5px ;
+    border: 3px double var(--primary); 
+}
+.modal-header {
+    background: linear-gradient(to right,  var(--background), var(--primary));
+}
+.modal-header, 
+.modal-body,
+.modal-footer {
+    border: none;
+    outline: none;
+}
+.modal-title {
+    color: #04203F;
+    color: white;
+}
+.modal-body {
+    color: var(--background);
+    background: #aed0f5;
+}
+.modal-footer {
+    background: linear-gradient(to right, var(--primary), var(--background));
+}
+.close {
+    color: transparent;
+    text-shadow: none;
+}
+.btn-learn {
+    max-width: 7.5rem;
+    border-radius: 2.1875rem;
+    height: 2.8125rem;
+    font-weight: 500; 
+}
+/* End Modals */
+
+/* Footer */
+.site-footer {
+    padding: 0;
+    color: #EEEEEE;
+    border: #345578;
+    background: linear-gradient(to left, #0d3461, #5184bb);
+}
+.ft-signup {
+    border-radius: 1.25rem; 
+}
+.ft-signup:hover,
+.ft-signup:focus,
+.ft-signup:active {
+    border: 3px double var(--success);
+    background: var(--primary);
+    color: white;
+}
+/* End Footer */
+
+/* Volunteer Cards */
+.vol-card-holder {
+    border-radius: 8px;
+    box-shadow:  6px 6px 8px #031931,
+        -6px -6px 8px #05274d;
+}
+.vol-cards,
+.meet-img {
+    border: 3px double rgb(110, 163, 199);
+    box-shadow:  inset 3.125rem 3.125rem 6.25rem #03162b,
+        inset -3.125rem -3.125rem 6.25rem #052a53;
+}
+.cd-img {
+    border: 3px groove rgb(110, 163, 199);
+    border-bottom: none;
+}
+.vol-card-body {
+    border: 3px groove rgb(110, 163, 199);
+    border-top: none;
+}
+.meet-holder {
+    margin: 2.5rem auto;
+}
+.meet-card {
+    margin-bottom: 3.125rem;
+    font-family: var(--font-offside);
+    background: var(--background);
+    border-radius: 10px;
+    box-shadow: inset 3.125rem 1.5625rem 6.25rem #03162b,
+        inset -3.125rem -1.5625rem 3.125rem #052a53;
+}
+.meet-role {
+    font-family: var(--font-offside);
+    font-size: 1.375em;
+}
+.meet-text {
+    line-height: 1.3;
+    font-size: 1em;
+}
+.design {
+    font-weight: 600;
+}
+
+/* BREAKPOINTS */
+/* 475px */
+@media screen and (min-width: 29.6875rem) {
+    .row-content,
+    .card-row {
+        padding: 1.5rem 0;
+    }
+    .sub-text {
+        font-size: 3.4em;
+    }
+    .lp-logo {
+        width: 2.625rem;
+        height: 2.625rem;
+    }
+    .faq-accordion-title {
+        font-size: 1.25em;
+    }
+    .mission-text {
+        font-size: 1.125em; 
+    }
+}
+
+/* 768px */
+@media screen and (min-width: 48rem) {
+    .row-content,
+    .card-row {
+        padding: 1.75rem 0; 
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.875em; 
+    }
+    .sub-text {
+        margin: 200px 0 3.125rem 0 ;
+    }
+    .lp-logo {
+        width: 2.625rem;
+        height: 2.625rem;
+    }
+    .about-table-header, 
+    .question {
+        font-size: 1.5em;
+    }
+    .mission-text,
+    .meet-text {
+        font-size: 1.25em;
+    }
+    .meet-role {
+        font-size: 1.5em;
+    }
+    .btn-learn,
+    .faqBtn,
+    .table-text {
+        font-size: 1.125em; 
+    }
+    .btn-learn {
+        max-width: fit-content;
+        height: 55px;
+        border-radius: 45px;
+    }
+}
+
+/* 992px */
+@media screen and (min-width: 62rem) {
+    .row-content,
+    .card-row {
+        padding: 2rem 0;
+    }
+    .sub-text {
+        font-size: 4.4em; 
+    }
+    .lp-logo {
+        width: 3.625rem;
+        height: 3.625rem;
+    }
+    .table-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    } 
+    .spotlight-intro {
+        font-size: 1.25em; 
+    }
+    .meet-holder {
+        margin-top: 3.75rem;
+        margin-bottom: 17.1875rem;
+    }
+}
+
+/* 1200px */
+@media screen and (min-width: 75rem) {
+    .row-content,
+    .card-row {
+        padding: 2.5rem 0; 
+    }
+    h1{
+        font-size: 2.875em;
+    }
+    h2 {
+        font-size: 2.5em; 
+    }
+    .sub-text {
+        font-size: 5.3em; 
+    }
+    .lp-logo{
+        width: 4.375rem;
+        height: 4.375rem;
+    }
+    .vol-title {
+        font-size: 1.375em;
+    }
+    .meet-holder {
+        margin-bottom: 13.875rem;
+    }
+}
