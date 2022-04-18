@@ -105,7 +105,7 @@ const Footer = () => {
                 </Row>
             </div>
             <p className='copyright text-center text-light mb-0 pb-2 design'>
-                Site Designed & Built by <a href='https://www.linkedin.com/in/pia-torain-dev/' target='_blank' rel='noreferrer'><u className='u-line'>Pia Torain</u></a>
+                Site Designed & Built by <a href='https://www.linkedin.com/in/ahmed-dizayee-5ba08473/' target='_blank' rel='noreferrer'><u className='u-line'>Ahmed Dizayy</u></a>
             </p>
         </footer>
     );
