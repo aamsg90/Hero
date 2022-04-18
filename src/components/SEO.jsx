@@ -6,7 +6,7 @@ export const SEO = ({title, description, content }) => {
         <Helmet>
             <title>{title}</title>
             <meta name={description} content={content} />
-            <meta name="author" content="Pia Torain" />
+            <meta name="author" content="Ahmed Dizayee" />
         </Helmet>
     );
 }
