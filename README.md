@@ -4,7 +4,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/Pia007/Hero/"><img src="https://user-images.githubusercontent.com/66088725/158651639-9d7710be-caf3-44eb-b237-b9ca33e0c09e.png" alt="Host A Healthcare Hero"></a>
+  <a href="https://github.com/aamsg90/Hero/"><img src="https://user-images.githubusercontent.com/66088725/158651639-9d7710be-caf3-44eb-b237-b9ca33e0c09e.png" alt="Host A Healthcare Hero"></a>
 </p>
 
 <br/>
@@ -34,7 +34,7 @@
 <br />
 
 
-<a href="https://github.com/Pia007/Hero/"><img src="https://user-images.githubusercontent.com/66088725/158652396-e07b0846-e84b-4ea0-9768-ef3bce7326a0.png" >
+<a href="https://github.com/aamsg90/Hero/"><img src="https://user-images.githubusercontent.com/66088725/158652396-e07b0846-e84b-4ea0-9768-ef3bce7326a0.png" >
 </a>
 <br />
 
