@@ -75,7 +75,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/pia007/Hero
+$ git clone https://github.com/aamsg90/Hero
 
 # Go into the repository
 $ cd hero
@@ -98,11 +98,8 @@ Software developers do more than just code. Problem solving is just as important
 <br />
 
 <h2 style="color: #3CB521">Credits</h2>
-Designed and built by Pia Torain 
+Designed and built by Ahmed Dizayee 
 <br />
 <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-Pia_Torain-0e76a8?style=plastic&labelColor=black&logo=linkedin&logoColor=0e76a8)](https://www.linkedin.com/in/pia-torain-dev/) [![Twitter Badge](https://img.shields.io/badge/-@FeenixRizn-1ca0f1?style=plastic&labelColor=black&logo=twitter&logoColor=1ca0f1&link=https://twitter.com/FeenixRizn)](https://twitter.com/FeenixRizn) [![Polywork Badge](https://img.shields.io/badge/-@FeenixRizn-e74c3c?style=plastic&labelColor=black&logo=polywork&logoColor=e74c3c)](https://www.polywork.com/feenixrizn)
-
 
 
